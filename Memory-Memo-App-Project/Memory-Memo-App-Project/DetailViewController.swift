@@ -12,12 +12,19 @@ class DetailViewController: UIViewController {
     
     
     @IBOutlet weak var lblDetail: UILabel!
+    var receiveItem: String = ""
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblDetail.text = receiveItem
 
         // Do any additional setup after loading the view.
+    }
+    
+    func receiveItem(_ item: String) {
+        receiveItem = item
     }
     
     

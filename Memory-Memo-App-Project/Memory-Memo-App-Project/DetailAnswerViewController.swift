@@ -10,17 +10,26 @@ import UIKit
 
 class DetailAnswerViewController: UIViewController {
     
+    var receiveAnswerItem: String = ""
+    
     
     @IBOutlet weak var lblAnswer: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblAnswer.text = receiveAnswerItem
 
         // Do any additional setup after loading the view.
     }
     
+    func receiveAnswerItem(_ answerItem: String) {
+        receiveAnswerItem = answerItem
+    }
+    
     
     @IBAction func didTabButton(_ sender: Any) {
+        _ = navigationController?.popToRootViewController(animated: true)
     }
     
 

@@ -15,10 +15,17 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tfAddItem.placeholder = "문제를 입력해 주세요"
+        tfAddItem.font = UIFont.systemFont(ofSize: 35)
+        tfAddItem.textAlignment = .center
     }
     
     
     @IBAction func didTabButton(_ sender: UIButton) {
+        questionItems.append(tfAddItem.text ?? tfAddItem.text!)
+        tfAddItem.text = ""
+        
     }
     
     /*

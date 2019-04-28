@@ -15,6 +15,10 @@ class AddAnswerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tfAddAnswerItem.placeholder = "문제의 답을 입력해 주세요"
+        tfAddAnswerItem.font = UIFont.systemFont(ofSize: 30)
+        tfAddAnswerItem.textAlignment = .center
 
         // Do any additional setup after loading the view.
     }
@@ -22,6 +26,9 @@ class AddAnswerViewController: UIViewController {
     
     
     @IBAction func didTabButton(_ sender: UIButton) {
+        answerItem.append(tfAddAnswerItem.text ?? tfAddAnswerItem.text!)
+        tfAddAnswerItem.text = ""
+        _ = navigationController?.popToRootViewController(animated: true)
     }
     
     /*
