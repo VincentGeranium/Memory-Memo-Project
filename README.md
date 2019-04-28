@@ -15,4 +15,3 @@ Memory Memo App 개발 개인 프로젝트 입니다
 ## Update
 - first commit
   - 190428
-    - 기본 스토리보드 구성, 아웃렛 변수와 액션 변수 정의
