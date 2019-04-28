@@ -99,7 +99,7 @@
         <!--답 정보-->
         <scene sceneID="FP2-Cm-ZEF">
             <objects>
-                <viewController title="답 정보" id="ibo-AJ-7gd" customClass="DetailAnswerViewController" customModule="Memory_Memo_App_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnswerDetail" title="답 정보" id="ibo-AJ-7gd" customClass="DetailAnswerViewController" customModule="Memory_Memo_App_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Scd-O9-c4P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,7 +188,7 @@
         <!--Memory Memo Answer 추가-->
         <scene sceneID="wS5-Gr-TvW">
             <objects>
-                <viewController title="Memory Memo Answer 추가" id="XMI-39-2Hz" customClass="AddAnswerViewController" customModule="Memory_Memo_App_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddAnswer" title="Memory Memo Answer 추가" id="XMI-39-2Hz" customClass="AddAnswerViewController" customModule="Memory_Memo_App_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UgA-aA-y6b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

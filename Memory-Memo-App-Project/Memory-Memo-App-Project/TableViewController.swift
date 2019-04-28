@@ -11,6 +11,10 @@ import UIKit
 var questionItems: Array<String> = ["테스트 확인 후 지워주세요"]
 var answerItem: Array<String> = []
 
+var questionAndAnswer: Dictionary = [questionItems : answerItem]
+
+
+
 class TableViewController: UITableViewController {
     
     @IBOutlet var tvListView: UITableView!
@@ -102,13 +106,16 @@ class TableViewController: UITableViewController {
             let indexPath = self.tvListView.indexPath(for: cell ?? cell!)
             let detailView = segue.destination as? DetailViewController
             detailView?.receiveItem(questionItems[(indexPath?.row) ?? (indexPath?.row)!])
-            
-//            if segue.identifier == "sgAnswerDetail" {
-//                let cell = sender as? 
-//            }
         }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        if ((storyboard?.instantiateViewController(withIdentifier: "AnswerDetail")) != nil) {
+            let daVC = DetailAnswerViewController()
+            
+//            daVC.lblAnswer.text = answerItem[(inde)]
+            
+        }
     }
     
 

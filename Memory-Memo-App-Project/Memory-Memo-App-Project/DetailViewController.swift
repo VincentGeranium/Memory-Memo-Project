@@ -8,11 +8,14 @@
 
 import UIKit
 
+
+
 class DetailViewController: UIViewController {
     
     
     @IBOutlet weak var lblDetail: UILabel!
     var receiveItem: String = ""
+    let tempStoredArrayOfAnswer: Array<String> = []
     
 
     override func viewDidLoad() {
