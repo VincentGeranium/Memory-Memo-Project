@@ -10,22 +10,21 @@ import UIKit
 
 class DetailAnswerViewController: UIViewController {
     
-    var receiveAnswerItem: String = ""
-    
-    
     @IBOutlet weak var lblAnswer: UILabel!
+    
+     var receiveAnswerItem: String = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        lblAnswer.text = receiveAnswerItem
 
+        lblAnswer.text = receiveAnswerItem
         // Do any additional setup after loading the view.
     }
     
-    func receiveAnswerItem(_ answerItem: String) {
-        receiveAnswerItem = answerItem
-    }
+//    func receiveAnswerItem(_ answerItem: String) {
+//        receiveAnswerItem = answerItem
+//    }
     
     
     @IBAction func didTabButton(_ sender: Any) {

@@ -26,8 +26,14 @@ class AddAnswerViewController: UIViewController {
     
     
     @IBAction func didTabButton(_ sender: UIButton) {
-        answerItem.append(tfAddAnswerItem.text ?? tfAddAnswerItem.text!)
-        tfAddAnswerItem.text = ""
+        
+        if ((storyboard?.instantiateViewController(withIdentifier: "AnswerDetail")) != nil) {
+            let daVC = DetailAnswerViewController()
+//            daVC.receiveAnswerItem(tfAddAnswerItem.text!)
+            daVC.receiveAnswerItem = tfAddAnswerItem.text == nil ? "답을 넣어 주세요" : tfAddAnswerItem.text!
+            
+        }
+//        tfAddAnswerItem.text = ""
         _ = navigationController?.popToRootViewController(animated: true)
     }
     

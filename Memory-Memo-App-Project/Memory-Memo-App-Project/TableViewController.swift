@@ -110,13 +110,8 @@ class TableViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
-        if ((storyboard?.instantiateViewController(withIdentifier: "AnswerDetail")) != nil) {
-            let daVC = DetailAnswerViewController()
-            
-//            daVC.lblAnswer.text = answerItem[(inde)]
-            
         }
     }
-    
 
-}
+
+
