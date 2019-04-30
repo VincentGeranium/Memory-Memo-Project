@@ -16,6 +16,7 @@
 		2000F0D12274A5DD0024A850 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2000F0D02274A5DD0024A850 /* DetailViewController.swift */; };
 		2000F0D32274A5FC0024A850 /* AddAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2000F0D22274A5FC0024A850 /* AddAnswerViewController.swift */; };
 		2000F0D52274A6260024A850 /* DetailAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2000F0D42274A6260024A850 /* DetailAnswerViewController.swift */; };
+		2059FC7022788C550051FD6B /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2059FC6F22788C550051FD6B /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2000F0D02274A5DD0024A850 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2000F0D22274A5FC0024A850 /* AddAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnswerViewController.swift; sourceTree = "<group>"; };
 		2000F0D42274A6260024A850 /* DetailAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnswerViewController.swift; sourceTree = "<group>"; };
+		2059FC6F22788C550051FD6B /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				2000F0BA227495770024A850 /* AppDelegate.swift */,
 				2000F0D22274A5FC0024A850 /* AddAnswerViewController.swift */,
 				2000F0CE2274A5A50024A850 /* AddViewController.swift */,
+				2059FC6F22788C550051FD6B /* Singleton.swift */,
 				2000F0D42274A6260024A850 /* DetailAnswerViewController.swift */,
 				2000F0D02274A5DD0024A850 /* DetailViewController.swift */,
 				2000F0CC2274A5740024A850 /* TableViewController.swift */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2000F0CD2274A5740024A850 /* TableViewController.swift in Sources */,
+				2059FC7022788C550051FD6B /* Singleton.swift in Sources */,
 				2000F0D52274A6260024A850 /* DetailAnswerViewController.swift in Sources */,
 				2000F0D32274A5FC0024A850 /* AddAnswerViewController.swift in Sources */,
 				2000F0D12274A5DD0024A850 /* DetailViewController.swift in Sources */,

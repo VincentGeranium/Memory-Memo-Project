@@ -10,6 +10,9 @@ import UIKit
 
 class AddAnswerViewController: UIViewController {
     
+    let shared: Singleton = Singleton.shared
+    
+    
     @IBOutlet var tfAddAnswerItem: UITextField!
     
 
@@ -27,13 +30,8 @@ class AddAnswerViewController: UIViewController {
     
     @IBAction func didTabButton(_ sender: UIButton) {
         
-        if ((storyboard?.instantiateViewController(withIdentifier: "AnswerDetail")) != nil) {
-            let daVC = DetailAnswerViewController()
-//            daVC.receiveAnswerItem(tfAddAnswerItem.text!)
-            daVC.receiveAnswerItem = tfAddAnswerItem.text == nil ? "답을 넣어 주세요" : tfAddAnswerItem.text!
-            
-        }
-//        tfAddAnswerItem.text = ""
+        shared.transferData = tfAddAnswerItem.text == nil ? "답을 입력하고 다시 만들어 주세요" : tfAddAnswerItem.text!
+
         _ = navigationController?.popToRootViewController(animated: true)
     }
     

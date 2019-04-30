@@ -10,15 +10,17 @@ import UIKit
 
 class DetailAnswerViewController: UIViewController {
     
+    let shared: Singleton = Singleton.shared
+    
     @IBOutlet weak var lblAnswer: UILabel!
     
-     var receiveAnswerItem: String = ""
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        lblAnswer.text = receiveAnswerItem
+        lblAnswer.text = shared.transferData
         // Do any additional setup after loading the view.
     }
     
